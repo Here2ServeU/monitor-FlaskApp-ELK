@@ -1,6 +1,6 @@
 # ELK Monitoring Project for t2s-courses.com
 
-This project sets up a Flask web application for `t2s-courses.com` using Docker Compose. Additionally, it configures an ELK (Elasticsearch, Logstash, and Kibana) stack to monitor the application's logs.
+This project uses Docker Compose to set up a Flask web application for `t2s-courses.com`. Additionally, it configures an ELK (Elasticsearch, Logstash, and Kibana) stack to monitor the application's logs.
 
 ---
 
@@ -41,6 +41,7 @@ if __name__ == "__main__":
 ```bash
 Flask
 ```
+
 
 ### Step 2: Set Up Docker Compose for Flask and ELK
 
@@ -114,6 +115,7 @@ output {
 }
 ```
 
+
 ### Step 3: Add Logging to Flask
 
 In app.py, add logging to generate log files:
@@ -133,6 +135,7 @@ def home():
     return "Welcome to T2S!"
 ```
 
+
 ### Step 4: Build and Start the Docker Containers
 
 1.	Start Docker Compose:
@@ -145,9 +148,11 @@ docker-compose up -d
 docker ps
 ```
 
+
 ### Step 5: Access the Flask Application
 
-Open a browser and go to http://localhost:5000. You should see “Welcome to T2S!”.
+* Open a browser and go to http://localhost:5000. You should see “Welcome to T2S!”.
+
 
 
 ### Step 6: View Logs in Kibana
@@ -157,6 +162,7 @@ Open a browser and go to http://localhost:5000. You should see “Welcome to T2S
 2.	In Kibana, create an index pattern for flask-logs*.
 
 3.	Go to Discover in Kibana to view and analyze the logs from your Flask app in real-time.
+
 
 
 ### Step 7: Clean Up
