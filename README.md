@@ -151,7 +151,7 @@ docker ps
 
 ### Step 5: Access the Flask Application
 
-* Open a browser and go to http://localhost:5000. You should see “Welcome to T2S!”.
+Open a browser and go to http://localhost:5000. You should see “Welcome to T2S!”.
 
 
 
