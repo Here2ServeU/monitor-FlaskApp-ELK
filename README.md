@@ -42,7 +42,7 @@ if __name__ == "__main__":
 Flask
 ```
 
-### Step 1: Create the Flask Application
+### Step 2: Set Up Docker Compose for Flask and ELK
 
 1. Create Dockerfile to build the Flask app:
 ```bash
