@@ -148,6 +148,17 @@ docker-compose up -d
 docker ps
 ```
 
+3.     Build the Docker Image and Run the Docker Container
+```bash
+docker build -t flask-app .
+docker run -p 5000:5000 flask-app
+```
+
+4.	Access the website at:
+```bash
+HTTP://localhost:5000
+```
+
 
 ### Step 5: Access the Flask Application
 
